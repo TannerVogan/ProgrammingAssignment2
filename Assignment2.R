@@ -27,8 +27,8 @@ makeCacheMatrix <- function(x = matrix()) {
        return(invMatrix) 
      } 
       
-     MatrixData <- z$getMatrix() 
+     MatrixData <- x$getMatrix() 
      invMatrix <- solve(MatrixData, ...) 
-     z$setInverse(invMatrix) 
+     x$setInverse(invMatrix) 
      return(invMatrix) 
  } 
